@@ -60,6 +60,8 @@ class Starboard(Cog):
             await message.pin()
             logger.info("pinned")
 
+            await self.pool.execute("INSERT INTO StarboardMessages VALUES ($1, $2);", message.id, channel.id)
+
 
 def setup(bot: Bot) -> None:
     bot.add_cog(Starboard(bot))
