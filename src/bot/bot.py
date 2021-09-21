@@ -36,6 +36,8 @@ class Bot(_Bot):
     async def on_ready(self) -> None:
         logger.info(f"Bot is ready. Connected to {len(self.guilds)} guilds.")
 
+        self.dispatch("config_refresh")
+
     async def on_connect(self) -> None:
         logger.info("Bot is connected to the gateway.")
 

@@ -11,6 +11,7 @@ def main() -> None:
     bot.load_extensions([
         "src.exts.ping",
         "src.exts.config",
+        "src.exts.starboard",
     ])
 
     bot.run(env["TOKEN"])

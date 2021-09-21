@@ -30,7 +30,7 @@ class Config(Cog):
 
         await ctx.send(f"Starboard created or updated with emoji {emoji}, requiring {count} reactions in #{channel.name}.")
 
-        self.bot.dispatch("refresh_configs")
+        self.bot.dispatch("config_refresh")
 
     @command(name="remove")
     @has_guild_permissions(manage_guild=True)
@@ -43,7 +43,7 @@ class Config(Cog):
 
         await ctx.send(f"Starboard removed for #{channel.name}")
 
-        self.bot.dispatch("refresh_configs")
+        self.bot.dispatch("config_refresh")
 
 
 def setup(bot: Bot) -> None:
