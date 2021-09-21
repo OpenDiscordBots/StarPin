@@ -31,7 +31,6 @@ of the starboard, which emoji is used, and number of emojies required to be star
 
 <hr/>
 
-
 To remove the channel from being tracked by the starboard, use the command `sp!remove` in the desired channel.
-(You can optionally pass the channel to be removed as an argument.)
+(You can optionally pass the channel to be removed as an argument).
 ![image](https://user-images.githubusercontent.com/39353605/134233009-ebb38fd8-d74e-4bf0-87ae-47fc00d6f4ee.png)
