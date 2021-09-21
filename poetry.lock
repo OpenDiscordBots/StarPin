@@ -92,6 +92,17 @@ reference = "master"
 resolved_reference = "45d498c1b76deaf3b394d17ccf56112fa691d160"
 
 [[package]]
+name = "emoji"
+version = "1.5.0"
+description = "Emoji for Python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+dev = ["pytest", "coverage", "coveralls"]
+
+[[package]]
 name = "idna"
 version = "3.2"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -208,7 +219,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "c1cf2c7203013819e17a42c9fda3bb04b3cadc7380738b9a89bc9e230f8007ff"
+content-hash = "6dd85138c9231672a5e385a3aca5342675ca14b944829d747859ede671815a28"
 
 [metadata.files]
 aiohttp = [
@@ -282,6 +293,9 @@ colorama = [
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
 "discord.py" = []
+emoji = [
+    {file = "emoji-1.5.0.tar.gz", hash = "sha256:2eddd062f940924fb25a3108d84d77dc571927d91a419b4c30f37e253c791b19"},
+]
 idna = [
     {file = "idna-3.2-py3-none-any.whl", hash = "sha256:14475042e284991034cb48e06f6851428fb14c4dc953acd9be9a5e95c7b6dd7a"},
     {file = "idna-3.2.tar.gz", hash = "sha256:467fbad99067910785144ce333826c71fb0e63a425657295239737f7ecd125f3"},

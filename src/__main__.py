@@ -10,6 +10,7 @@ def main() -> None:
     bot = Bot(command_prefix="sp!")
     bot.load_extensions([
         "src.exts.ping",
+        "src.exts.config",
     ])
 
     bot.run(env["TOKEN"])
