@@ -16,3 +16,10 @@ To install the dependencies you can then run `poetry install` in the folder you 
 You need to copy `.env.example` to `.env` and fill in the appropriate values.
 
 To run the bot run `poetry run task start` or `docker-compose up` to run with docker.
+
+## Usage
+
+To configure the starboard for a channel, navigate to the channel you wish to configure and enter the command 
+`sp!setup`.
+
+To remove the channel from being tracked by the starboard, use the command `sp!remove` in the desired channel.
