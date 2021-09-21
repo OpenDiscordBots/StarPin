@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "odb-starpins"
+version = "1.0.0"
+description = "Use channel pins as a managed starboard."
+authors = ["vcokltfre <vcokltfre@example.com>"]
+license = "MIT"
+repository = "https://github.com/opendiscordbots/starpins"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+"discord.py" = {git = "https://github.com/rapptz/discord.py"}
+loguru = "^0.5.3"
+taskipy = "^1.8.2"
+python-dotenv = "^0.19.0"
+asyncpg = "^0.24.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.taskipy.tasks]
+start = "python3 -m src"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
