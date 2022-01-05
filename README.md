@@ -4,7 +4,7 @@ Use channel pins as a managed starboard.
 
 ## Installation
 
-You will need to install `poetry` to run this bot locally for levelopment, but running in docker is preferred for production deployment.
+You will need to install `poetry` to run this bot locally for development, but running in docker is preferred for production deployment.
 
 Poetry can be installed using the following command:
 
