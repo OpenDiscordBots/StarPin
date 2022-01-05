@@ -1,4 +1,6 @@
-from discord import TextChannel
+from typing import Union
+
+from discord import Emoji, TextChannel
 from discord.ext.commands import Cog, Context, command, has_guild_permissions
 from emoji import emoji_count
 
@@ -13,12 +15,16 @@ class Config(Cog):
 
     @command(name="setup")
     @has_guild_permissions(manage_guild=True)
-    async def setup(self, ctx: Context, channel: TextChannel = None, emoji: str = "⭐", count: int = 5) -> None:
+    async def setup(self, ctx: Context, channel: TextChannel = None, emoji: Union[Emoji, str] = "⭐", count: int = 5) -> None:
         """Set up a starboard for a given channel, or the current channel."""
 
-        if len(emoji) != 1 or emoji_count(emoji) != 1:
-            await ctx.reply("You must provide a valid unicode emoji, or leave it as the default.")
-            return
+        if isinstance(emoji, str):
+            if len(emoji) != 1 or emoji_count(emoji) != 1:
+                await ctx.reply("You must provide a valid unicode emoji, or leave it as the default.")
+                return
+
+        else:
+            emoji = str(emoji)
 
         channel = channel or ctx.channel
 
