@@ -8,7 +8,7 @@ from src.bot import Bot
 
 
 class Config(Cog):
-    """A cog to configure StarPins."""
+    """A cog to configure StarPin."""
 
     def __init__(self, bot: Bot) -> None:
         self.bot = bot

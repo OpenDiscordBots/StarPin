@@ -7,7 +7,7 @@ from src.bot import Bot
 
 
 class Starboard(Cog):
-    """The core listener cog for StarPins."""
+    """The core listener cog for StarPin."""
 
     def __init__(self, bot: Bot) -> None:
         self.bot = bot

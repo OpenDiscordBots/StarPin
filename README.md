@@ -1,4 +1,4 @@
-# StarPins
+# StarPin
 
 Use channel pins as a managed starboard.
 
